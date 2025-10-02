@@ -216,5 +216,10 @@ def main():
     print(f"Reporte generado el: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*50)
 
+    if platform.system() == "Windows":
+        os.system("pause")
+    else:
+        input("\nPresiona Enter para salir...")
+
 if __name__ == "__main__":
     main()
